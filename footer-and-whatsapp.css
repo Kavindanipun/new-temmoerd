@@ -1,0 +1,49 @@
+/* ===== GLASSGUARD PREMIUM FOOTER + WHATSAPP ===== */
+.gg-footer{position:relative;background:#020202;color:#fff;border-top:1px solid #1b1b1b;overflow:hidden;padding-top:0}
+.gg-footer-word{height:250px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border-bottom:1px solid #181818;font-size:clamp(110px,18vw,330px);font-weight:950;letter-spacing:-.075em;line-height:.72;color:#070707;text-shadow:0 -1px 0 #222,0 0 30px rgba(255,157,0,.025);white-space:nowrap;user-select:none}
+.gg-footer-grid{max-width:1400px;margin:auto;padding:74px 42px 60px;display:grid;grid-template-columns:1.55fr repeat(3,1fr);gap:72px}
+.gg-footer-logo{display:inline-block;color:#fff;text-decoration:none;font-size:25px;font-weight:950;letter-spacing:-1.2px;margin-bottom:19px}.gg-footer-logo span{color:#ff9d00}
+.gg-footer p{color:#777;line-height:1.7;font-size:13px;margin:0}
+.gg-footer h4{font-size:12px;margin:5px 0 21px;letter-spacing:.04em}
+.gg-footer-grid>div:not(:first-child){display:flex;flex-direction:column;align-items:flex-start}
+.gg-footer-grid a:not(.gg-footer-logo){color:#7e7e7e;text-decoration:none;font-size:13px;margin:0 0 15px;transition:.2s ease}
+.gg-footer-grid a:not(.gg-footer-logo):hover{color:#ff9d00;transform:translateX(3px)}
+.gg-status{display:inline-flex;align-items:center;gap:8px;color:#888;border:1px solid #202020;background:#080808;border-radius:9px;padding:8px 10px;margin-top:24px;font-size:11px}.gg-status i{width:6px;height:6px;background:#25d366;border-radius:50%;box-shadow:0 0 10px #25d366}
+.gg-phone{margin-top:4px!important;color:#ff9d00!important;font-weight:800}
+.gg-footer-bottom{max-width:1400px;margin:auto;border-top:1px solid #171717;padding:22px 42px 30px;display:flex;justify-content:space-between;color:#444;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.gg-wa-float{position:fixed;right:24px;bottom:23px;z-index:9999;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 14px 40px rgba(0,0,0,.45),0 0 0 7px rgba(37,211,102,.08);transition:.25s ease}.gg-wa-float:hover{transform:translateY(-4px) scale(1.03)}.gg-wa-float svg{width:34px;height:34px}
+.gg-wa-bubble{position:fixed;right:24px;bottom:99px;z-index:9998;width:min(310px,calc(100vw - 32px));padding:17px 42px 17px 17px;background:#fff;color:#111;border-radius:15px;box-shadow:0 16px 45px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:.3s ease}
+.gg-wa-bubble:after{content:"";position:absolute;right:24px;bottom:-8px;width:16px;height:16px;background:#fff;transform:rotate(45deg)}
+.gg-wa-bubble.show{opacity:1;visibility:visible;transform:none}.gg-wa-bubble b{display:block;font-size:13px;margin-bottom:5px}.gg-wa-bubble span{display:block;color:#555;font-size:11px;line-height:1.45}.gg-wa-close{position:absolute;right:10px;top:8px;border:0;background:none;color:#999;font-size:20px;cursor:pointer}
+@media(max-width:800px){.gg-footer-word{height:145px;font-size:28vw}.gg-footer-grid{padding:45px 22px 35px;grid-template-columns:1fr 1fr;gap:38px 24px}.gg-footer-brand{grid-column:1/-1}.gg-footer-bottom{padding:18px 22px 24px;gap:15px;flex-direction:column}.gg-wa-float{right:16px;bottom:16px;width:56px;height:56px}.gg-wa-bubble{right:16px;bottom:85px}.gg-footer-grid>div:last-child{grid-column:1/-1}}
+@media(max-width:430px){.gg-footer-word{height:110px}.gg-footer-grid{grid-template-columns:1fr 1fr}.gg-footer-grid a:not(.gg-footer-logo){font-size:12px}.gg-footer h4{margin-bottom:16px}}
+
+/* === FOOTER GLASSGUARD WORDMARK VISIBILITY FIX === */
+.gg-footer-word{
+  height:clamp(180px,20vw,285px);
+  padding:28px 28px 22px;
+  box-sizing:border-box;
+  align-items:center;
+  justify-content:center;
+  font-size:clamp(76px,14.2vw,265px);
+  line-height:.82;
+  letter-spacing:-.065em;
+  overflow:hidden;
+  white-space:nowrap;
+}
+@media(max-width:800px){
+  .gg-footer-word{
+    height:clamp(125px,27vw,180px);
+    padding:18px 14px;
+    font-size:clamp(58px,17.5vw,135px);
+    letter-spacing:-.06em;
+  }
+}
+@media(max-width:430px){
+  .gg-footer-word{
+    height:112px;
+    padding:14px 10px;
+    font-size:19vw;
+    letter-spacing:-.055em;
+  }
+}

@@ -1,0 +1,19 @@
+
+<section id="finder" class="finder-host" aria-label="Find your tempered glass">
+  <iframe id="finderFrame" src="finder.html" title="Find Your Glass" loading="lazy" scrolling="no"></iframe>
+</section>
+<script>
+(() => {
+  const frame = document.getElementById("finderFrame");
+  window.addEventListener("message", (event) => {
+    if (event.source !== frame.contentWindow || !event.data || event.data.type !== "glassguard-finder-height") return;
+    const height = Number(event.data.height);
+    if (Number.isFinite(height) && height > 0) frame.style.height = Math.ceil(height) + "px";
+  });
+})();
+</script>
+<style>
+.finder-host { width:100%; margin:0; padding:0; background:#000; overflow:hidden; }
+.finder-host iframe { display:block; width:100%; height:1100px; border:0; overflow:hidden; }
+@media (max-width:700px) { .finder-host iframe { height:1450px; } }
+</style>
